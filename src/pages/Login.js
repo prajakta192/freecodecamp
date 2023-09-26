@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/login.css'
 
 const Login = () => {
 	return(
@@ -9,11 +10,11 @@ const Login = () => {
 				<div>
 					<form>
 					<div className='form-contorl'>
-						<label htmlFor='username'>Username</label>
+						
 						<input type='text' placeholder='username' id='username'/>
 					</div>
 					<div className='form-contorl'>
-						<label htmlFor='password'>Password</label>
+						
 						<input type='password' placeholder='password' id='password'/>
 					</div>
 					<button>Login</button>
