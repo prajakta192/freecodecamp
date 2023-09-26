@@ -2,33 +2,20 @@
   margin: 0;
   padding: 0;
 }
-
+button{
+  cursor: pointer;
+}
 /*Order page*/
-.orderWrapper{
+.mainWrapper{
   background: #f1f1f1;
   display: flex;
 }
-
-/*Table*/
 .tableWrapper{
   flex: 1 auto;
   padding: 0 1.5rem 2rem;
 }
-.tableHead{
-  padding: 1.5rem 0;
-}
-.tableHead h4{
-  font-weight: 700;
-}
-.tableHead,.rightSec{
-  display: flex;
-  justify-content: space-between;
-}
-.bElfLb, .hQlpoS{
-  padding-left: 5px!important;
-  padding-right: 5px!important;
-}
-.export-btn, .create-order-btn{
+
+.export-btn, .create-order-btn, .rightActionWrapper button{
   margin-left: .5rem;
   font-size: .75rem;
   border-radius: .5rem;
@@ -37,46 +24,11 @@
   border: none;
   font-weight: 500;
 }
-.export-btn{
+.export-btn, .rightActionWrapper button{
   background: #e3e3e3;
-   color: black;
-}
-.export-btn:hover{
-  background: #d4d4d4;
   color: black;
 }
-.create-order-btn{
-  background: #3f3f3f;
-}
-.create-order-btn:hover{
-  background: #2b2b2b;
-  color: #e2e2e2;
-}
-/*Side bar*/
-
-.sidebar{
-  background: #ebebeb;
-  flex:1;
-  min-width: 15rem;
-  width: calc(100vw - 15rem);
-  padding-top:1rem ;
-  overflow: auto;
-}
-.sideNav{
- background: #ebebeb;
- position: fixed;
- height: 100vh;
-}
-.sideNav ul.sideMenu{
-  list-style: none;
-  padding-left: 1rem;
-}
-.sideNav ul.sideMenu li{
-  margin: .25rem 0;
-}
-.sideNav ul.sideMenu li a{
-  text-decoration: none;
-  font-size: 0.8125rem;
-  color: #303030;
-  margin-left: .5rem;
+.export-btn:hover, .rightActionWrapper button:hover{
+  background: #d4d4d4;
+  color: black;
 }

@@ -5,6 +5,8 @@ import {SiGoogleanalytics} from 'react-icons/si'
 import {TbDiscount2} from 'react-icons/tb'
 import {BiBookContent} from 'react-icons/bi'
 import {PiNotebookBold} from 'react-icons/pi'
+import '../styles/sidebar.css'
+
 const SideBar = () => {
 	return(
 			<>

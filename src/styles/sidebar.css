@@ -1,0 +1,28 @@
+
+/*Side bar*/
+.sidebar{
+  background: #ebebeb;
+/*  flex:1;*/
+  min-width: 15rem;
+  width: 15rem;
+  padding-top:1rem ;
+  overflow: auto;
+}
+.sideNav{
+ background: #ebebeb;/*
+ position: fixed;*/
+ height: 100vh;
+}
+.sideNav ul.sideMenu{
+  list-style: none;
+  padding-left: 1rem;
+}
+.sideNav ul.sideMenu li{
+  margin: .25rem 0;
+}
+.sideNav ul.sideMenu li a{
+  text-decoration: none;
+  font-size: 0.8125rem;
+  color: #303030;
+  margin-left: .5rem;
+}
