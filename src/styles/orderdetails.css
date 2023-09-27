@@ -10,22 +10,25 @@ gap: 1rem;
 	display: flex;
 	flex-direction: column;
 }
-.orderTitleWrapper .OrderDetails, .order-header, .rightActionWrapper{
+.orderTitleWrapper .OrderDetails, .order-header, .rightActionWrapper,.refundNotification{
 	gap: 10px;
 }
 .productDetails,.productTitle,.rightSection,.productQuantity{
 	flex: 1;
 }
-section, .cardTitle, .productOrderDetails,.returnAddress,.productRow{
+section, .cardTitle, .productOrderDetails,.returnAddress,.productRow,.refundNotification{
 	display: flex;
 }
 .OrderDetails .orderId,{
 	font-size: 1.25rem;
 }
-.productTitle span:nth-child(2),.statusBtn .orderBtn,.selfReturnBtn a,.cardTitle .orderStatus h2,.productQuantity input, .reasonToReturn select{
+.productTitle span:nth-child(2),.statusBtn .orderBtn,.selfReturnBtn a,.cardTitle .orderStatus h2,.productQuantity input, .reasonToReturn select,.reasonToRefund input, .refundAmount input{
 	border-radius: .5rem;
 }
-.orderStatusDetails, .selfReturnBtn a,.returnAddress,.reasonToReturn label,.orderLocation dl dt span, .orderStatus dl dt span, .OrderDetailCard .extraNote p,.OrderDetailCard .sectionHead h2, .cardTitle .orderStatus h2, .productTitle h3{
+.orderStatusDetails,.selfReturnBtn a,.returnAddress,.reasonToReturn label,.orderLocation dl dt span, 
+.orderStatus dl dt span,.OrderDetailCard .extraNote p,.OrderDetailCard .sectionHead h2,
+.cardTitle .orderStatus h2, .productTitle h3, .refundAmount label, .availableRefund span,
+.refundNotification span{
 font-size: 0.8125rem;
 }
 .topSection{
@@ -142,14 +145,24 @@ padding: 0 1rem .5rem;
 .reasonToReturn{
 	margin-top: 1rem;
 }
-.reasonToReturn select{
+.reasonToReturn select,.reasonToRefund input,.refundAmount input,.refundNotification{
 	margin-top: .25rem;
 }
-.reasonToReturn, .reasonToReturn select{
+.reasonToReturn, .reasonToReturn select,{
 	width: 100%;
 }
-.productQuantity input, .reasonToReturn select{
+.productQuantity input, .reasonToReturn select, .refundAmount input{
 	padding: .35rem 1rem;
 	background:transparent;
 	border: 1px solid #717171;
+}
+.reasonToRefund input{
+	padding: .35rem 0;
+	border: 1px solid #717171;
+}
+.horizontalLine hr.new{
+	margin: 1rem 0;
+	background: #ebebeb;
+	border: none;
+	height: 0.0625rem;
 }
