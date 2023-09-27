@@ -1,7 +1,7 @@
 import React from 'react'
 import DataTable from 'react-data-table-component';
 import SideBar from '../components/SideBar'
-import OrderDetails from '../components/OrderDetails'
+import TabDetails from '../components/TabDetails'
 
 const OrderDashboard = () => {
 	
@@ -12,7 +12,7 @@ const OrderDashboard = () => {
 						<SideBar/>
 					</div>
 					<div className='tableWrapper'>
-						<OrderDetails/>
+						<TabDetails/>
 					</div>	
 				</main>
 			</>

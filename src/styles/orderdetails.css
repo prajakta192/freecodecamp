@@ -4,15 +4,29 @@
 	justify-content: space-between;
 }
 .orderBoxDetails, .rightVerticalStack, .leftSection{
+gap: 1rem;
+}
+.orderBoxDetails, .rightVerticalStack, .leftSection,.reasonToReturn{
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
 }
 .orderTitleWrapper .OrderDetails, .order-header, .rightActionWrapper{
 	gap: 10px;
 }
-.OrderDetails .orderId{
+.productDetails,.productTitle,.rightSection,.productQuantity{
+	flex: 1;
+}
+section, .cardTitle, .productOrderDetails,.returnAddress,.productRow{
+	display: flex;
+}
+.OrderDetails .orderId,{
 	font-size: 1.25rem;
+}
+.productTitle span:nth-child(2),.statusBtn .orderBtn,.selfReturnBtn a,.cardTitle .orderStatus h2,.productQuantity input, .reasonToReturn select{
+	border-radius: .5rem;
+}
+.orderStatusDetails, .selfReturnBtn a,.returnAddress,.reasonToReturn label,.orderLocation dl dt span, .orderStatus dl dt span, .OrderDetailCard .extraNote p,.OrderDetailCard .sectionHead h2, .cardTitle .orderStatus h2, .productTitle h3{
+font-size: 0.8125rem;
 }
 .topSection{
 	padding: 1.5rem 0;
@@ -53,15 +67,11 @@
 	overflow: clip;
 }
 .orderLocation dl dt span, .orderStatus dl dt span, .OrderDetailCard .extraNote p{
-	font-size: 0.8125rem;
 	color: #616161;
 }
 .orderLocation dl dd p, .orderStatus dl dd p, .orderBoxId dl dd p{
 	color: #303030;
 	font-size: .9rem;
-}
-section, .cardTitle{
-	display: flex;
 }
 section{
 	gap: 25px;
@@ -75,7 +85,6 @@ section{
 	padding: 1rem;
 }
 .cardTitle .orderStatus h2{
-	border-radius: .5rem;
 	font-weight: 600;
 	background: #cdfee1;
 	color: #083d25;
@@ -89,15 +98,58 @@ section{
 .insideOrderBox{
 	padding: 0 1rem 1rem;
 }
-.OrderDetailCard .sectionHead h2, .cardTitle .orderStatus h2{
-	font-size: .8125rem;
-}
-.rightSection{
-	flex: 1;
-}
 .rightVerticalStack .OrderDetailCard{
 	padding: 1rem;
 }
 .extraNote{
 	padding: .5rem 0;
+}
+/*retrun app*/
+.orderStatusDetails, .selfReturnBtn a{
+padding: .5rem 1rem;
+}
+.statusBtn .orderBtn{
+	padding: 0.375rem .75rem;
+}
+.selfReturnBtn{
+	margin: 1rem 0 .5rem;
+}
+.selfReturnBtn a{
+	border: 0.0625rem solid #ebebeb;
+	color: inherit;
+	text-decoration: none;
+}
+.statusBtn .orderBtn{
+	width: 100%;
+	background: #3f3f3f;
+	border: none;
+	color: #f8f8f8;
+}
+.returnAddress{
+justify-content: space-between;
+padding: 0 1rem .5rem;
+}
+.productImg img{
+	width: 100%;
+	max-width: 50px;
+}
+.productTitle span:nth-child(2){
+	font-size: .75rem;
+	color: #303030;
+	background: #e3e3e3;
+	padding: .25rem;
+}
+.reasonToReturn{
+	margin-top: 1rem;
+}
+.reasonToReturn select{
+	margin-top: .25rem;
+}
+.reasonToReturn, .reasonToReturn select{
+	width: 100%;
+}
+.productQuantity input, .reasonToReturn select{
+	padding: .35rem 1rem;
+	background:transparent;
+	border: 1px solid #717171;
 }

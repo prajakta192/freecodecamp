@@ -11,11 +11,11 @@ const Login = () => {
 					<form>
 					<div className='form-contorl'>
 						
-						<input type='text' placeholder='username' id='username'/>
+						<input type='text' placeholder='order ID' id='orderid'/>
 					</div>
 					<div className='form-contorl'>
 						
-						<input type='password' placeholder='password' id='password'/>
+						<input type='email' placeholder='email ID' id='email'/>
 					</div>
 					<button>Login</button>
 					</form>

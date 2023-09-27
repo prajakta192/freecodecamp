@@ -1,6 +1,7 @@
 import React from 'react'
 import DataTable from 'react-data-table-component';
 import {Button} from 'react-bootstrap'
+import{Link} from 'react-router-dom'
 import {data} from '../data.js'
 import '../styles/orderdatatable.css'
 const Table = () => {
@@ -61,6 +62,7 @@ const Table = () => {
 					</div>
 					<DataTable columns={columns} data={data} selectableRows/>
 				</div>
+                
 			</>
 		)
 }
