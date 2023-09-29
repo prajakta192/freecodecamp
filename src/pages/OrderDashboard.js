@@ -8,9 +8,9 @@ const OrderDashboard = () => {
 	return(
 			<>
 				<main className='mainWrapper'>
-					<div className='sidebar'>
+					{/*<div className='sidebar'>
 						<SideBar/>
-					</div>
+					</div>*/}
 					<div className='tableWrapper'>
 						<TabDetails/>
 					</div>	

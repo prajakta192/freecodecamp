@@ -1,4 +1,5 @@
-.orderTitleWrapper .OrderDetails, .order-header, .rightActionWrapper,.paymentStatus span, .fulfillStatus span{
+.orderTitleWrapper .OrderDetails, .order-header, .rightActionWrapper,.paymentStatus span, 
+.fulfillStatus span, .exchangeOptions{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -10,7 +11,7 @@ gap: 1rem;
 	display: flex;
 	flex-direction: column;
 }
-.orderTitleWrapper .OrderDetails, .order-header, .rightActionWrapper,.refundNotification{
+.orderTitleWrapper .OrderDetails, .order-header, .rightActionWrapper,.refundNotification,.exchangeOptions{
 	gap: 10px;
 }
 .productDetails,.productTitle,.rightSection,.productQuantity{
@@ -22,13 +23,15 @@ section, .cardTitle, .productOrderDetails,.returnAddress,.productRow,.refundNoti
 .OrderDetails .orderId,{
 	font-size: 1.25rem;
 }
-.productTitle span:nth-child(2),.statusBtn .orderBtn,.selfReturnBtn a,.cardTitle .orderStatus h2,.productQuantity input, .reasonToReturn select,.reasonToRefund input, .refundAmount input{
+.productTitle span:nth-child(2),.statusBtn .orderBtn,.selfReturnBtn a,.cardTitle .orderStatus h2,
+.productQuantity input, .reasonToReturn select,.reasonToRefund input, .refundAmount input,
+.exchangeOptions select, .exchangeOptions input{
 	border-radius: .5rem;
 }
 .orderStatusDetails,.selfReturnBtn a,.returnAddress,.reasonToReturn label,.orderLocation dl dt span, 
 .orderStatus dl dt span,.OrderDetailCard .extraNote p,.OrderDetailCard .sectionHead h2,
 .cardTitle .orderStatus h2, .productTitle h3, .refundAmount label, .availableRefund span,
-.refundNotification span{
+.refundNotification span, .exchangeOptions label{
 font-size: 0.8125rem;
 }
 .topSection{
@@ -82,6 +85,9 @@ section{
 .leftSection{
 	flex: 1 1 40%;
 }
+.exchangeTab .leftSection{
+	flex: 1;
+}
 .cardTitle{
 	align-items: center;
 	gap: .25rem;
@@ -104,7 +110,7 @@ section{
 .rightVerticalStack .OrderDetailCard{
 	padding: 1rem;
 }
-.extraNote{
+.extraNote, .exchangeOptions{
 	padding: .5rem 0;
 }
 /*retrun app*/
@@ -148,10 +154,11 @@ padding: 0 1rem .5rem;
 .reasonToReturn select,.reasonToRefund input,.refundAmount input,.refundNotification{
 	margin-top: .25rem;
 }
-.reasonToReturn, .reasonToReturn select,{
+.reasonToReturn, .reasonToReturn select,.exchangeOptions select{
 	width: 100%;
 }
-.productQuantity input, .reasonToReturn select, .refundAmount input{
+.productQuantity input, .reasonToReturn select, .refundAmount input,.exchangeOptions select,
+.exchangeOptions input{
 	padding: .35rem 1rem;
 	background:transparent;
 	border: 1px solid #717171;

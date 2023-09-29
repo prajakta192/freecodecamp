@@ -14,7 +14,7 @@ const ReturnTab = () => {
 											<RiArrowLeftLine/>
 										</div>
 										<div className='orderStatus'>
-											<h2>Return items</h2>
+											<h2>Return for order #orderID</h2>
 										</div>
 										
 									</div>
@@ -80,14 +80,14 @@ const ReturnTab = () => {
 								 								</div>
 								 							</div>
 								 							<div className='productRow'>
-								 								<div className='reasonToReturn'>
+								 								<div className='reasonToReturn w-100'>
 								 								<div>
 								 									<label>
 								 										Select a return reason
 								 									</label>
 								 								</div>
 								 								<div>	
-								 									<select>
+								 									<select className='w-100'>
 								 										<option value="UNKNOWN">Unknown</option>
 								 										<option value="SIZE_TOO_SMALL">Size was too small</option>
 								 										<option value="SIZE_TOO_LARGE">Size was too large</option>
