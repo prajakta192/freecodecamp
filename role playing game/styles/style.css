@@ -1,0 +1,13 @@
+body{
+	background: #0a0a23;
+}
+#game{
+	max-width: 500px;
+	max-height: 400px;
+	background: #fff;
+	padding: 10px;
+}
+#textMessage{
+	background: #0a0a23;
+	color: #fff;
+}
